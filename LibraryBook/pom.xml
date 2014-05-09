@@ -15,6 +15,9 @@
 		<org.slf4j-version>1.7.5</org.slf4j-version>
 		<jackson.databind-version>2.2.3</jackson.databind-version>
 		<jackson.mapper.version>1.5.6</jackson.mapper.version>
+		<spring-social.version>1.0.0.RELEASE</spring-social.version>
+		<spring-social-twitter.version>1.0.0.RELEASE</spring-social-twitter.version>
+		<spring-social-facebook.version>1.0.0.RELEASE</spring-social-facebook.version>
 	</properties>
 	<dependencies>
 		<!-- Mail Support -->
@@ -24,10 +27,10 @@
 			<version>1.4.3</version>
 		</dependency>
 		<dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-context-support</artifactId>
-            <version>${org.springframework-version}</version>
-        </dependency>		
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context-support</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency>
 		<!-- Validation -->
 		<dependency>
 			<groupId>javax.validation</groupId>
@@ -214,6 +217,39 @@
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
 		</dependency>
+		<!-- Social Plugin -->
+		<!-- Spring Social Core -->
+		<dependency>
+			<groupId>org.springframework.social</groupId>
+			<artifactId>spring-social-core</artifactId>
+			<version>${spring-social.version}</version>
+		</dependency>
+		<!-- Spring Social Web (contains login/signup controllers) -->
+		<dependency>
+			<groupId>org.springframework.social</groupId>
+			<artifactId>spring-social-web</artifactId>
+			<version>${spring-social.version}</version>
+		</dependency>
+		<!-- Spring Social Twitter -->
+		<dependency>
+			<groupId>org.springframework.social</groupId>
+			<artifactId>spring-social-twitter</artifactId>
+			<version>${spring-social-twitter.version}</version>
+		</dependency>
+		<!-- Spring Social Facebook -->
+		<dependency>
+			<groupId>org.springframework.social</groupId>
+			<artifactId>spring-social-facebook</artifactId>
+			<version>${spring-social-facebook.version}</version>
+		</dependency>
+		<!-- Spring Security Crypto  any OAuth1 service provider (e.g. Twitter) 
+		  the provided JDBC connection repository classes  -->
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-crypto</artifactId>
+			<version>3.2.3.RELEASE</version>
+		</dependency>
+
 
 		<!-- Test -->
 		<dependency>
