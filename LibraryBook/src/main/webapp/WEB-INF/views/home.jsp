@@ -73,6 +73,15 @@
 	modelAttribute="bookList">
 	<input type="submit" value="AllBooks">
 </form:form>
-
+<script src="https://www.paypalobjects.com/js/external/paypal-button.min.js?merchant=bikashdora-facilitator@gmail.com" 
+    data-button="buynow" 
+    data-name="DemoProduct" 
+    data-quantity="3" 
+    data-callback="http://localhost:8080/LibraryBook/home" 
+    data-env="sandbox">
+    </script>
+   <a href="/LibraryBook/CreditCard">Credit Card Payment</a>
+    
+    
 </body>
 </html>
