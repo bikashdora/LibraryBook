@@ -242,13 +242,21 @@
 			<artifactId>spring-social-facebook</artifactId>
 			<version>${spring-social-facebook.version}</version>
 		</dependency>
-		<!-- Spring Security Crypto  any OAuth1 service provider (e.g. Twitter) 
-		  the provided JDBC connection repository classes  -->
+		<!-- Spring Security Crypto any OAuth1 service provider (e.g. Twitter) 
+			the provided JDBC connection repository classes -->
 		<dependency>
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-crypto</artifactId>
 			<version>3.2.3.RELEASE</version>
 		</dependency>
+
+		<!--BroadLeaf Core Dependencies -->
+		<dependency>
+			<groupId>com.mycompany</groupId>
+			<artifactId>core</artifactId>
+			<version>1.0</version>
+		</dependency>
+		
 
 
 		<!-- Test -->
