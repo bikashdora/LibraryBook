@@ -4,9 +4,11 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 
 import org.apache.log4j.Logger;
+import org.broadleafcommerce.common.vendor.service.exception.PaymentException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -131,7 +133,13 @@ public class BooksController {
 	    } 
 	    
 	    
-	   
+	    /*resam added*/
+	    
+	    @RequestMapping(value = "/CreditCard", method = RequestMethod.GET)
+	    public String creditCardpage(Model model) throws PaymentException {
+	        return "CreditCardHome";
+	    }
+	    
 	 
 	    
 	

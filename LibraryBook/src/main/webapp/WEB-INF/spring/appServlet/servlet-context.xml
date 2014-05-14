@@ -60,6 +60,8 @@
 
 
 	<context:component-scan base-package="com.org.bookservice" />
+	<!-- Core payment Integration -->
+	<context:component-scan base-package="com.mycompany.sample" />	
 	<beans:bean id="transactionManager"
 		class="org.springframework.orm.hibernate3.HibernateTransactionManager">
 		<beans:property name="sessionFactory" ref="sessionFactory" />
@@ -84,8 +86,8 @@
      
     <!-- You can have some pre-configured messagess also which are ready to send -->
     <beans:bean id="preConfiguredMessage" class="org.springframework.mail.SimpleMailMessage">
-        <beans:property name="to" value="lokeshgupta1981@gmail.com"></beans:property>
-        <beans:property name="from" value="howtodoinjava@gmail.com"></beans:property>
+        <beans:property name="to" value="xyz1981@gmail.com"></beans:property>
+        <beans:property name="from" value="abca@gmail.com"></beans:property>
         <beans:property name="subject" value="FATAL - Application crash. Save your job !!"/>
     </beans:bean>
 
